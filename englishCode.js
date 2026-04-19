@@ -38,11 +38,13 @@ document.addEventListener('DOMContentLoaded', function() {
     soundWrong = document.getElementById("sound-wrong");
     soundFinish = document.getElementById("sound-finish");
 
-    if (input) {
-        input.addEventListener("keypress", (e) => {
-            if (e.key === "Enter") submitAnswer();
-        });
-    }
+   if (input) {
+    input.addEventListener("keypress", (e) => {
+        if (e.key === "Enter") submitAnswer();
+    });
+} else {
+    console.warn("Cảnh báo: Không tìm thấy phần tử 'answer' (input) trong HTML!");
+}
 
     // Đóng Settings khi click ngoài
     let settingsOverlay = document.getElementById("settingsOverlay");
