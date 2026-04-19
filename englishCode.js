@@ -999,7 +999,7 @@ function exitGame() {
 
 
 
-
+document.body.innerHTML = "<h1>Kiểm tra JS: Đang chạy bình thường!</h1>";
 
 
 
